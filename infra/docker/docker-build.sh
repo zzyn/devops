@@ -22,8 +22,6 @@ done
 
 docker rmi $DOCKER_IMAGE_NAME -f
 
-# TODO remove bff host
 docker build -t $DOCKER_IMAGE_NAME \
---add-host=nexus3-cn.englishtown.com:10.17.10.17 \
---add-host=mt-student-exam-bff.qa.edtech.kt:123.206.238.221 \
+--add-host=nexus3.xxx.com:127.0.0.1 \
 ./
