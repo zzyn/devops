@@ -1,0 +1,1 @@
+CREATE ROLE superusername WITH SUPERUSER = true AND LOGIN = true AND PASSWORD = 'superuserpassword';

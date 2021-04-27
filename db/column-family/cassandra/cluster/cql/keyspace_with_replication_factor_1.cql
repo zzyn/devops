@@ -1,0 +1,1 @@
+create keyspace keyspace_with_replication_factor_1 with replication={'class':'NetworkTopologyStrategy','dc1':1} and durable_writes=true;
