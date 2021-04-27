@@ -1,0 +1,12 @@
+version: '3'
+services:
+  standalone:
+    image: "redis"
+    container_name: "redis_standalone"
+    ports:
+     - "63790:6379"
+    volumes:
+     - ./standalone.conf:/usr/local/etc/redis/redis.conf
+     - ./data:/data
+    command: redis-server /usr/local/etc/redis/redis.conf 
+    privileged: true

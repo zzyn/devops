@@ -1,0 +1,145 @@
+[
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-master-63791",
+        "namespace_separator": ":",
+        "port": 63791,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-slave2-63793",
+        "namespace_separator": ":",
+        "port": 63793,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-slave1-63792",
+        "namespace_separator": ":",
+        "port": 63792,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-standalone-63790",
+        "namespace_separator": ":",
+        "port": 63790,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-sentinel-master-6379",
+        "namespace_separator": ":",
+        "port": 6379,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-sentinel-slave1-6380",
+        "namespace_separator": ":",
+        "port": 6380,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-sentinel-slave2-6381",
+        "namespace_separator": ":",
+        "port": 6381,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.01",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node1-7001",
+        "namespace_separator": ":",
+        "port": 7001,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node2-7002",
+        "namespace_separator": ":",
+        "port": 7002,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node3-7003",
+        "namespace_separator": ":",
+        "port": 7003,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node4-7004",
+        "namespace_separator": ":",
+        "port": 7004,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node5-7005",
+        "namespace_separator": ":",
+        "port": 7005,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "127.0.0.1",
+        "keys_pattern": "*",
+        "name": "redis-cluster-node6-7006",
+        "namespace_separator": ":",
+        "port": 7006,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    }
+]

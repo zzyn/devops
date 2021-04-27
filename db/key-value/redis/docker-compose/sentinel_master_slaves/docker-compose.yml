@@ -1,0 +1,62 @@
+version: '3'
+services:
+  sentinel_master:
+    image: "redis"
+    container_name: "redis_sentinel_master"
+    ports:
+     - "6379:6379"
+    volumes:
+     - ./master.conf:/usr/local/etc/redis/redis.conf
+     - ./data/master:/data
+    command: redis-server /usr/local/etc/redis/redis.conf 
+    privileged: true
+  sentinel_slave1:
+    image: "redis"
+    container_name: "redis_sentinel_slave_1"
+    ports:
+     - "6380:6379"
+    volumes:
+     - ./slave1.conf:/usr/local/etc/redis/redis.conf
+     - ./data/slave1:/data
+    command: redis-server /usr/local/etc/redis/redis.conf
+    privileged: true 
+  sentinel_slave2:
+    image: "redis"
+    container_name: "redis_sentinel_slave_2"
+    ports:
+     - "6381:6379"
+    volumes:
+     - ./slave2.conf:/usr/local/etc/redis/redis.conf
+     - ./data/slave2:/data
+    command: redis-server /usr/local/etc/redis/redis.conf
+    privileged: true
+  sentinel1:
+    image: "redis"
+    container_name: "redis_sentinel_1"
+    ports:
+      - "16379:16379"
+    volumes:
+     - ./sentinel1.conf:/usr/local/etc/redis/sentinel.conf
+     - ./data/sentinel1:/data
+    command: redis-server /usr/local/etc/redis/sentinel.conf --sentinel
+    privileged: true 
+  sentinel2:
+    image: "redis"
+    container_name: "redis_sentinel_2"
+    ports:
+      - "26379:16379"
+    volumes:
+     - ./sentinel2.conf:/usr/local/etc/redis/sentinel.conf
+     - ./data/sentinel2:/data
+    command: redis-server /usr/local/etc/redis/sentinel.conf --sentinel
+    privileged: true 
+  sentinel3:
+    image: "redis"
+    container_name: "redis_sentinel_3"
+    ports:
+      - "36379:16379"
+    volumes:
+     - ./sentinel3.conf:/usr/local/etc/redis/sentinel.conf
+     - ./data/sentinel3:/data
+    command: redis-server /usr/local/etc/redis/sentinel.conf --sentinel
+    privileged: true
