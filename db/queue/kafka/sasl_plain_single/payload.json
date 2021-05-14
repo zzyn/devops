@@ -1,0 +1,13 @@
+{
+    "studentId": "12314",
+    "contentPath": "smallstar/cn-3/book-1/unit-1",
+    "skillResults": [
+      {
+        "skillId": 111,
+        "subSkillId": 222,
+        "subSkillScore": 1,
+        "timestampUTC": "2021-04-08T00:06:04Z"
+      }
+    ],
+    "lastUpdatedTimestampUTC": "2021-04-08T00:06:04Z"
+  }
