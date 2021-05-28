@@ -1,8 +1,8 @@
 
 ```shell
 sudo su
-chmod 777 cassandra-cluster/*
-cd cassandra-cluster
+chmod 777 cluster/*
+cd cluster
 //first node in new cluster
 ./install.sh -i 10.178.86.195 -e 10.178.86.195 -s 'qaenvironment' -n 4 -r 1 -u cassandra1 -p cassandra2 -a 0 -j 1
 //second node in new cluster
