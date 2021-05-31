@@ -1,0 +1,28 @@
+---
+  version: '2'
+  
+  services:
+    ksqldb-server:
+      image: confluentinc/ksqldb-server:0.18.0
+      hostname: ksqldb-server
+      container_name: ksqldb-server
+      ports:
+        - "8088:8088"
+      network_mode: bridge
+      environment:
+        KSQL_LISTENERS: http://0.0.0.0:8088
+        KSQL_BOOTSTRAP_SERVERS: "xxxx:9092"
+        KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
+        KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
+        KSQL_SECURITY_PROTOCOL: "SASL_PLAINTEXT"
+        KSQL_SASL_MECHANISM: "PLAIN"
+        KSQL_SASL_JAAS_CONFIG: "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"xxxx#username\" password=\"password\";"
+  
+    ksqldb-cli:
+      image: confluentinc/ksqldb-cli:0.18.0
+      container_name: ksqldb-cli
+      network_mode: bridge
+      depends_on:
+        - ksqldb-server
+      entrypoint: /bin/sh
+      tty: true
